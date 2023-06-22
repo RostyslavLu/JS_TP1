@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travail pratique 1</title>
+    <link rel="stylesheet" href="./assets/style/main.css">
+    <script src="./assets/script/main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>TP1</h1>
+    </header>
+    <main>
+
+        <form data-js-form>
+            <div class="actif" data-js-panneau="1">
+                <h2>Saisir vos information</h2>
+                <div data-js-control-wrapper = "1">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" required>
+                    <small data-js-error></small>
+                </div>
+                <div data-js-control-wrapper>
+                    <label for="surname">Prénom</label>
+                    <input type="text" id="surname" required>
+                    <small data-js-error></small>
+                </div>
+                <div data-js-control-wrapper>
+                    <label for="email">Courriel</label>
+                    <input type="email" id="email" required>
+                    <small data-js-error></small>
+                </div>
+                <div data-js-control-wrapper>
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" id="phone" placeholder="123-456-7890" required>
+                    <small data-js-error></small>
+                </div>
+                <div data-js-control-wrapper>
+                    <label for="birthday">Date de naissance</label>
+                    <input type="date" id="birthday" required>
+                    <small data-js-error></small>
+                </div>
+
+                <div class="revenu">
+                        <p>Revenu des 5 derniéres années</p>
+                    <div>
+                        <div data-js-control-wrapper>
+                            <label for="revenu1"></label>
+                            <input type="number" id="revenu1" required>
+                            <small data-js-error></small>
+                        </div>
+                        <div data-js-control-wrapper>
+                            <label for="revenu2"></label>
+                            <input type="number" id="revenu2" required>
+                            <small data-js-error></small>
+                        </div>
+                        <div data-js-control-wrapper>
+                            <label for="revenu3"></label>
+                            <input type="number" id="revenu3" required>
+                            <small data-js-error></small>
+                        </div>
+                        <div data-js-control-wrapper>
+                            <label for="revenu4"></label>
+                            <input type="number" id="revenu4" required>
+                            <small data-js-error></small>
+                        </div>
+                        <div data-js-control-wrapper>
+                            <label for="revenu5"></label>
+                            <input type="number" id="revenu5" required>
+                            <small data-js-error></small>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" data-js-suivant="1">Suivant</button>
+            </div>
+
+            <div class="inactif" data-js-panneau="2">
+                <h2>Quels sont vos</h2>
+                    
+                    <div data-js-control-wrapper>
+                        <label for="loisirs">Loisir (séparé par virgules):</label>
+                        <textarea name="loisir" id="loisirs" cols="30" rows="5" required></textarea>
+                        <small data-js-error></small>
+                    </div>
+                    <div data-js-control-wrapper>
+                        <label for="metsFavoris">Mets favoris (séparé par virgules):</label>
+                        <textarea name="metsFavoris" id="mets" cols="30" rows="5" required></textarea>
+                        <small data-js-error></small>
+                    </div>
+                    <div data-js-control-wrapper>
+                        <label for="villesPreferees">Villes préférées dans le monde (séparé par virgules):</label>
+                        <textarea name="villesPreferees" id="villes" cols="30" rows="5" required></textarea>
+                        <small data-js-error></small>
+                    </div>
+                
+                <button data-js-precedent="1">Précédent</button>
+                <button data-js-suivant="2">Suivant</button>
+            </div>
+
+            <div class="inactif" data-js-panneau="3">
+                <div data-js-cote="1">
+                    <h3 data-js-titre>Donner une côte de 1 (gauche) à 5 (droite) pour choix de 'loisir'</h3>
+                    
+                    <small data-js-error></small>
+                </div>
+                <div data-js-cote="2">
+                    <h3 data-js-titre>Donner une côte de 1 (gauche) à 5 (droite) pour choix de 'Mets'</h3>
+                    
+                    <small data-js-error></small>
+                </div>
+                <div data-js-cote="3">
+                    <h3 data-js-titre>Donner une côte de 1 (gauche) à 5 (droite) pour choix de 'Villes'</h3>
+                   
+                    <small data-js-error></small>
+                </div>
+            
+                <button data-js-precedent="2">Précédent</button>
+                <button data-js-suivant="3">Suivant</button>
+            </div>
+
+
+            <div class="inactif" data-js-panneau="4">
+                <h2>Résumé</h2>
+                <div data-js-resume-info>
+                    
+                </div>
+                <div data-js-resume-loisir>
+                    <p>Loisirs</p>
+                    <ul></ul>
+                </div>
+                <div data-js-resume-mets>
+                    <p>Mets</p>
+                    <ul></ul>
+                </div>
+                <div data-js-resume-villes>
+                    <p>Villes</p>
+                    <ul></ul>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
+

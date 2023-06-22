@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 40px;
+    font-family: sans-serif;
+}
+
+input:not([type="radio"]) {
+    display: inline-block;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.8);
+    min-width: 150px;
+}
+
+.revenu{
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.revenu>div>* {
+    display: block;
+}
+
+button, label, textarea {
+    margin-top: 10px;
+}
+
+.inactif {
+    display: none;
+}
+[data-js-panneau="2"] div {
+    display: flex;
+    margin-top: 10px;
+}
+
+[data-js-cote] form {
+    padding: 10px 0;
+    display: inline;
+}
+[data-js-cote] h3 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+[data-js-control-wrapper="required"] {
+    padding: 10px 0;
+}
+
+h2 {
+    padding: 20px 0;
+}
+
+.error {
+    color: red;
+    transition: all 0.3s ease-in-out;
+}
+ul {
+    padding-left: 40px;
+}
+li {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+p {
+    padding: 10px 0;
+}
